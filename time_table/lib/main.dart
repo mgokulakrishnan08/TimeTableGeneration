@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:time_table/screens/AddDetails.dart';
 void main(){
   runApp(const MyApp());
 }
@@ -72,7 +72,7 @@ class _AddUserState extends State<AddUser>{
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
                     hintText: 'Enter Faculty Advisor Name',
-                    labelText: 'FacultyAdvisorName',
+                    labelText: 'Faculty Advisor Name',
                     errorText: _validateFaculty?"Faculty name can't be empty":null,
                   ),
                 ),
@@ -107,10 +107,11 @@ class _AddUserState extends State<AddUser>{
                 children: [
                   TextButton(
                       style: TextButton.styleFrom(
-                          primary: Colors.white,
+                          foregroundColor: Colors.white,
                           backgroundColor: Colors.teal,
                           textStyle: const TextStyle(fontSize: 15)),
                       onPressed: () async {
+                       
                         setState(() {
                           _userNameController.text.isEmpty
                               ? _validateName = true
@@ -124,7 +125,8 @@ class _AddUserState extends State<AddUser>{
                           _userPeriodsController.text.isEmpty
                               ? _validatePeriods = true
                               : _validatePeriods = false;
-
+                             
+ 
                         });
                         /*if (_validateName == false &&
                             _validateContact == false &&
@@ -138,7 +140,7 @@ class _AddUserState extends State<AddUser>{
                          Navigator.pop(context,result);
                         }*/
                       },
-                      child: const Text('Next')),
+                      child: const Text('Save')),
                   const SizedBox(
                     width: 10.0,
                   ),
@@ -160,11 +162,29 @@ class _AddUserState extends State<AddUser>{
             ),
             )
            ),
+             floatingActionButton: FloatingActionButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> const AddDetails())
+              );
+             },
+             child: const Icon(Icons.navigate_next)
+            ),
+            
+           bottomNavigationBar: BottomNavigationBar(
+            items: const [
+              BottomNavigationBarItem(
+                label: 'Class',
+                icon: Icon(Icons.checklist),
+              ),
+              BottomNavigationBarItem(
+                label: 'Professor',
+                icon: Icon(Icons.person),
+              ),
+              BottomNavigationBarItem(
+                label: 'Department',
+                icon: Icon(Icons.construction),
+              ),
+            ],
+            ),
       );
      }
-
-
-
-
-
 }
