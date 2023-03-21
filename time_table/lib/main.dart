@@ -146,7 +146,7 @@ class _AddUserState extends State<AddUser>{
                   ),
                   TextButton(
                       style: TextButton.styleFrom(
-                          primary: Colors.white,
+                          foregroundColor: Colors.white,
                           backgroundColor: Colors.red,
                           textStyle: const TextStyle(fontSize: 15)),
                       onPressed: () {
