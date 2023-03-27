@@ -45,79 +45,180 @@ class _AddDetailsState extends State<AddDetails> {
               const SizedBox(
                 height: 20.0,
               ),
-              TextField(
+              
+                Row(
+                  mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
                   controller: _userSub1Controller,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
                     hintText: 'Enter Subject1',
                     labelText: 'Subject1',
                     errorText:
-                        _validateSub1 ? 'Name Value Can\'t Be Empty' : null,
-                  )),
+                        _validateSub1 ? 'Subject Value Can\'t Be Empty' : null,
+                  )))),
+                  Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter Subject1 Credit',
+                    labelText: 'Credit',
+                    
+                  ))))]),
+                  
+            
               const SizedBox(
                 height: 20.0,
               ),
-              TextField(
-                  controller: _userSub2Controller,
+              Row(
+                  mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
                     hintText: 'Enter Subject2',
                     labelText: 'Subject2',
-                    errorText: _validateSub2
-                        ? 'Contact Value Can\'t Be Empty'
-                        : null,
-                  )),
+                    errorText:
+                        _validateSub2 ? 'Subject Value Can\'t Be Empty' : null,
+                  )))),
+                  Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter Subject2 Credit',
+                    labelText: 'Credit',
+                    
+                  ))))]),
               const SizedBox(
                 height: 20.0,
               ),
-              TextField(
-                  controller: _userSub3Controller,
+              Row(
+                  mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
                     hintText: 'Enter Subject3',
                     labelText: 'Subject3',
-                    errorText: _validateSub3
-                        ? 'Description Value Can\'t Be Empty'
-                        : null,
-                  )),
+                    errorText:
+                        _validateSub3 ? 'Subject Value Can\'t Be Empty' : null,
+                  )))),
+                  Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter Subject3 Credit',
+                    labelText: 'Credit',
+                    
+                  ))))]),
               const SizedBox(
                 height: 20.0,
               ),
-              TextField(
-                  controller: _userSub4Controller,
+              Row(
+                  mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
                     hintText: 'Enter Subject4',
                     labelText: 'Subject4',
-                    errorText: _validateSub4
-                        ? 'Description Value Can\'t Be Empty'
-                        : null,
-                  )),
+                    errorText:
+                        _validateSub4 ? 'Subject Value Can\'t Be Empty' : null,
+                  )))),
+                  Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter Subject4 Credit',
+                    labelText: 'Credit',
+                    
+                  ))))]),
               const SizedBox(
                 height: 20.0,
               ),
-              TextField(
-                  controller: _userSub5Controller,
+              Row(
+                  mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
                     hintText: 'Enter Subject5',
                     labelText: 'Subject5',
-                    errorText: _validateSub5
-                        ? 'Description Value Can\'t Be Empty'
-                        : null,
-                  )),
+                    errorText:
+                        _validateSub5 ? 'Subject Value Can\'t Be Empty' : null,
+                  )))),
+                  Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter Subject5 Credit',
+                    labelText: 'Credit',
+                    
+                  ))))]),
               const SizedBox(
                 height: 20.0,
               ),
-              TextField(
-                  controller: _userSub6Controller,
+              Row(
+                  mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
                     hintText: 'Enter Subject6',
                     labelText: 'Subject6',
-                    errorText: _validateSub6
-                        ? 'Description Value Can\'t Be Empty': null,
-                  )),
+                    errorText:
+                        _validateSub6 ? 'Subject Value Can\'t Be Empty' : null,
+                  )))),
+                  Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: TextField(
+                  controller: _userSub1Controller,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter Subject6 Credit',
+                    labelText: 'Credit',
+                    
+                  ))))]),
               const SizedBox(
                 height: 20.0,
               ),
